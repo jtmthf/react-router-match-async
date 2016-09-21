@@ -1,4 +1,7 @@
 # react-router-match-async
+[![Build Status](https://travis-ci.org/jtmthf/react-router-match-async.svg?branch=master)](https://travis-ci.org/jtmthf/react-router-match-async)
+[![Coverage Status](https://coveralls.io/repos/github/jtmthf/react-router-match-async/badge.svg)](https://coveralls.io/github/jtmthf/react-router-match-async)
+
 A replacement for the Match component in React Router v4 that allows for async routes
 
 Note that this project is pre-release and API's will likely change. A stable version will not be
