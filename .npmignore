@@ -1,0 +1,11 @@
+# Coverage directory from jest
+coverage
+
+# src file
+index.js
+
+__tests__
+.babelrc
+.eslintrc
+.gitignore
+index.js

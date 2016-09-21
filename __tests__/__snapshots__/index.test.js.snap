@@ -1,0 +1,7 @@
+exports[`test loads components asynchronously 1`] = `null`;
+
+exports[`test loads components asynchronously 2`] = `
+<p>
+  Hello Async Route!
+</p>
+`;
