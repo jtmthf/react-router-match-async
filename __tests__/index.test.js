@@ -11,7 +11,7 @@ function sleep(ms = 0) {
 
 async function load() {
   await sleep(200);
-  return <p>Hello Async Route!</p>
+  return () => <p>Hello Async Route!</p>;
 }
 
 it('loads components asynchronously', async () => {

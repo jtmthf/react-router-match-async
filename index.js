@@ -8,10 +8,10 @@ export default class MatchAsync extends Component {
   }
 
   getComponent = () => {
-    const { getComponent, ...matchProps } = this.props;
-    const maybePromise = getComponent(matchProps, (err, component) => {
+    const { getComponent } = this.props;
+    const maybePromise = getComponent((err, component) => {
       if (err) {
-        this.errorHandler();
+        this.errorHandler(err);
       } else {
         this.setComponent(component);
       }
@@ -30,7 +30,7 @@ export default class MatchAsync extends Component {
   errorHandler = (err) => {
     const { onError } = this.props;
     if (onError) {
-      onError();
+      onError(err);
     } else {
       throw err;
     }
@@ -45,8 +45,8 @@ export default class MatchAsync extends Component {
     return (
       <Match
         {...this.props}
-        render={() => (
-        component !== undefined ? component : null
+        render={(matchProps) => (
+        component !== undefined ? React.createElement(component, matchProps) : null
       )}
       />
     );
