@@ -45,8 +45,8 @@ export default class MatchAsync extends Component {
     return (
       <Match
         {...this.props}
-        render={() => (
-        component !== undefined ? React.createElement(component) : null
+        render={(matchProps) => (
+        component !== undefined ? React.createElement(component, matchProps) : null
       )}
       />
     );
