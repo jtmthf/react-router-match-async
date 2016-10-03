@@ -4,7 +4,7 @@
   "description": "A replacement for the Match component in React Router v4 that allows for async routes",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel index.js --out-file lib/index.js",
+    "build": "babel src/index.js --out-file lib/index.js",
     "test": "jest --coverage",
     "lint": "eslint index.js"
   },

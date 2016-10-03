@@ -2,10 +2,11 @@
 coverage
 
 # src file
-index.js
+src
 
 __tests__
 .babelrc
 .eslintrc
 .gitignore
-index.js
+examples
+.travis.yml
