@@ -3,7 +3,7 @@ import 'babel-polyfill';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router';
-import MatchAsync from '../index';
+import MatchAsync from '../src';
 
 function sleep(ms = 0) {
   return new Promise(r => setTimeout(r, ms));

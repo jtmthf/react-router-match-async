@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter, Miss, Link } from 'react-router';
 
 // import MatchAsync
-import MatchAsync from '../../../dist';
+import MatchAsync from '../../../lib';
 
 
 const NoMatch = ({ location }) => (

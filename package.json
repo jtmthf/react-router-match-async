@@ -1,10 +1,10 @@
 {
   "name": "react-router-match-async",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A replacement for the Match component in React Router v4 that allows for async routes",
-  "main": "dist.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel index.js --out-file dist.js",
+    "build": "babel index.js --out-file lib/index.js",
     "test": "jest --coverage",
     "lint": "eslint index.js"
   },
@@ -47,5 +47,8 @@
     "react-dom": "^15.3.2",
     "react-router": "^4.0.0-alpha.3",
     "react-test-renderer": "^15.3.2"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/examples/"]
   }
 }

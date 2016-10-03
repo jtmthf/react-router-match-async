@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Match, Link } from 'react-router';
 
-import MatchAsync from '../../../dist';
+import MatchAsync from '../../../lib';
 
 const Topics = ({ pathname, pattern }) => (
   // 5. Components rendered by a `Match` get some routing-specific
