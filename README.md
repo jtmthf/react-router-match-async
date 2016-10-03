@@ -28,6 +28,14 @@ async function load() {
 
 ```
 
+## Limitations
+
+This library doesn't currently work with server side rendering. Using a centralized route config
+is likely the only option as the routes need to be fully parsed in order to know what to dynamically
+load. Another limitation is that it's currently not possible to block before the needed data is
+loaded. For now, a null element is rendered while waiting, which isn't the best user experience. I'd
+happily accept ideas on how to fix this.
+
 
 ## Tests
 

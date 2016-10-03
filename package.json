@@ -1,6 +1,6 @@
 {
   "name": "react-router-match-async",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A replacement for the Match component in React Router v4 that allows for async routes",
   "main": "dist.js",
   "scripts": {

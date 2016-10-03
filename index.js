@@ -16,7 +16,7 @@ export default class MatchAsync extends Component {
         this.setComponent(component);
       }
     });
-    if (typeof maybePromise.then === 'function') {
+    if (maybePromise && typeof maybePromise.then === 'function') {
       maybePromise.then(this.setComponent)
                   .catch(this.errorHandler);
     }
@@ -37,17 +37,16 @@ export default class MatchAsync extends Component {
   }
 
   render() {
-    const { component, getComponent } = this;
-    if (component === undefined) {
-      getComponent();
-    }
-
     return (
       <Match
         {...this.props}
-        render={(matchProps) => (
-        component !== undefined ? React.createElement(component, matchProps) : null
-      )}
+        render={(matchProps) => {
+          const { component, getComponent } = this;
+          if (component === undefined) {
+            getComponent();
+          }
+          return component !== undefined ? React.createElement(component, matchProps) : <span />;
+        }}
       />
     );
   }

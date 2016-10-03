@@ -1,4 +1,4 @@
-exports[`test loads components asynchronously 1`] = `null`;
+exports[`test loads components asynchronously 1`] = `<span />`;
 
 exports[`test loads components asynchronously 2`] = `
 <p>
